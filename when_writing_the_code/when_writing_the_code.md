@@ -23,4 +23,4 @@
    When we do the entire change sometime will change other bodies code. Please check it after you do it. You can do it in your github to check the diff.
 
 * ### Define a function name should be a Verb and Really process that action:
-   Define a function should be a verb that is really basic concept and also need to define it very clear, meaning we don't allow so a function but doing in different thing. ect: a function called ``` get_name ```.It should really <b>only</b> get the name not entire user profile.
+   Define a function should be a verb that is really basic concept and also need to define it very clear, meaning we don't allow so a function but doing in different thing. etc: a function called ``` get_name ```.It should really <b>only</b> get the name not entire user profile.
