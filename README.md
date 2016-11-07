@@ -26,6 +26,9 @@ Overview: We do the code by testing during our code view. There is some tips nee
 * ### Be careful your entire change:
    When we do the entire change sometime will change other bodies code. Please check it after you do it. You can do it in your github to check the diff.
 
+* ### Define a function name should be a Verb and Really process that action:
+   Define a function should be a verb that is really basic concept and also need to define it very clear, meaning we don't allow so a function but doing in different thing. ect: a function called ``` get_name ```.It should really <b>only</b> get the name not entire user profile.
+    
 ## When writing the Test case
 
 * ### Don't duplicate the logic:
@@ -39,3 +42,7 @@ Overview: We do the code by testing during our code view. There is some tips nee
 * ### Use one line testing code if you can:
 
    When you define a subject. This is very easy to write something like ```it{is_expected.to be true}``` this kind of test case line. It will be very clear to know what are we testing for.
+
+* ### Merge the code as possible as you can:
+
+   We need to merge some ```let(:something)``` or ```before``` as possible as you can. We are not prefer to add so many var or duplicate so many same action for it. Please make sure you code are clean.
