@@ -20,5 +20,10 @@
     User.create([{username: 'Lucas', age: 10},
                  {username: 'Nancy', age: 11},
                  {username: 'Elan', age: 12}])
-    # Make your multiple array with correct 
+    # Make your multiple array with correct
   ```
+
+* ### Has one method in Model
+    When we add the method ```has_one```. This will going to make many to one or one to one relation and there is another usage. Let's take this situation. We already have many product were using one to many relation to picture. Then there is a product call SpeciaProduct are only have one to one relation to picture. In this case we create a type to separate Product and SpecialProduct. So what about the picture which are already use the one to many relation ?
+
+    The has_one function will only take the last one which is the newest picture. So when I call ```Product.picture```. It will become the latest picture when I call it.

@@ -15,3 +15,11 @@
 * ### Merge the code as possible as you can:
 
    We need to merge some ```let(:something)``` or ```before``` as possible as you can. We are not prefer to add so many var or duplicate so many same action for it. Please make sure you code are clean. We also can merge when we create the ```factory girl```.
+
+* ### The Different between ```eq``` and ```be```
+
+  #### - be
+  It will going to compare the value and also the object. It's really useful when check the same Object in Rspec
+
+  #### - eq
+  It will only check the value of what you expect.
