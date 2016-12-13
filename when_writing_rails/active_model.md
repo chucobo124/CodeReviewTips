@@ -15,10 +15,10 @@
     # This will output an array so we can also doing destroy_all method
     ```
   #### - Multiple Insert
-  This one is using for a big number of information, such like a big number of profile.
-  ``` Ruby
-  User.create([{username: 'Lucas', age: 10},
-               {username: 'Nancy', age: 11},
-               {username: 'Elan', age: 12}])
-  #Make your multiple array with correct hash
+    This one is using for a big number of information, such like a big number of profile.
+    ``` Ruby
+    User.create([{username: 'Lucas', age: 10},
+                 {username: 'Nancy', age: 11},
+                 {username: 'Elan', age: 12}])
+    # Make your multiple array with correct 
   ```
