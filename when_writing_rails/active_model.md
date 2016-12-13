@@ -20,7 +20,7 @@
     User.create([{username: 'Lucas', age: 10},
                  {username: 'Nancy', age: 11},
                  {username: 'Elan', age: 12}])
-    # Make your multiple array with correct
+    # Make your multiple array with correct hash
   ```
 
 * ### Has one method in Model
