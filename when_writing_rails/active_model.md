@@ -1,6 +1,6 @@
 # Active Model
 
-* ### [The different between include and join.](http://tomdallimore.com/blog/includes-vs-joins-in-rails-when-and-where/)
+* ### [The difference between include and join.](http://tomdallimore.com/blog/includes-vs-joins-in-rails-when-and-where/)
 
 * ### Database Control
   When doing the database control. there are some tips I will forgot is the multiple search and multiple insert.
@@ -24,6 +24,16 @@
   ```
 
 * ### Has one method in Model
-    When we add the method ```has_one```. This will going to make many to one or one to one relation and there is another usage. Let's take this situation. We already have many product were using one to many relation to picture. Then there is a product call SpeciaProduct are only have one to one relation to picture. In this case we create a type to separate Product and SpecialProduct. So what about the picture which are already use the one to many relation ?
+    When we add the method ```has_one```. This will going to make many to one or one to one relation and there is another usage. Let's take this situation. We already have many product were using one to many relation to picture. Then there is a product call <b>SpeciaProduct</b> are only have one to one relation to picture. In this case we create a type to separate <b>Product</b> and <b>SpecialProduct</b>. So what about the picture which are already use the one to many relation ?
 
     The has_one function will only take the last one which is the newest picture. So when I call ```Product.picture```. It will become the latest picture when I call it.
+
+    If we want to use has_one to take the latest product. We need to add the order condition which is
+    ```Ruby
+      has_one :order, -> { order('id DESC') }
+    ```
+    The ```order``` method will going to generate a code called ```ORDER BY``` in SQL. So the parameter will going to add to ```ORDER BY``` in the back like ```ORDER BY id DESC```.
+
+    This is the documentation of ```has_one``` or ```has_many``` documentation.
+
+    [has_one or has_many  comment in rails repo](https://github.com/rails/rails/blob/master/activerecord/lib/active_record/associations.rb#L1362)
