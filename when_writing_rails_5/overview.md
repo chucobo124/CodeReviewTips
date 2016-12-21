@@ -35,12 +35,14 @@ According the command line. Our application will become API mode. There are some
 
  <b>1. Controller</b>
 
-    Beforehand. The Controller will going to inherit. ``ActionController::API`` than ``ApplicationController``
+    Beforehand. The Controller will going to inherit ``ActionController::API`` than ``ApplicationController``
 
  <b>2. application.rb </b>
+
    ```ruby
    config.api_only = true
    ```
+
    This line will add it to define this app as API mode.
 
   [Link to documentation](http://edgeguides.rubyonrails.org/api_app.html)
