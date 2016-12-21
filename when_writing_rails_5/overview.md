@@ -1,6 +1,6 @@
 # About Rails 5
 
-There is one thin I really interesting which is API mode of rails 5. In the pass. When we wanna create an API server in Rails we need to install grape. This time rails 5 release API server to independent the rails server. Really interesting. And [Rails documentation](http://edgeguides.rubyonrails.org/api_app.html) already wrote the article to explain how api server works.
+There is one thing I really interesting which is API mode of rails 5. In the past. When we wanna create an API server in Rails we need to install grape. This time rails 5 release API server to independent the rails server. Really interesting. And [Rails Guide](http://edgeguides.rubyonrails.org/api_app.html) is already wrote the article to explain how api server works.
 
 # What's new stuff
 
@@ -23,7 +23,7 @@ There is one thin I really interesting which is API mode of rails 5. In the pass
     self.abstract_class = true
   end
   ```
-  This line is helping to inherit to the ActiveRecord when you wanna have a function in the ```ActiveRecord```.
+  This line is helping to inherit to the ActiveRecord when you wanna have a function in the ``ActiveRecord``.
 
   [Link to documentation](http://blog.bigbinary.com/2015/12/28/application-record-in-rails-5.html)
 
@@ -35,7 +35,7 @@ According the command line. Our application will become API mode. There are some
 
  <b>1. Controller</b>
 
-    Beforehand. The Controller will going to inherit. ```ActionController::API``` than ```ApplicationController```
+    Beforehand. The Controller will going to inherit. ``ActionController::API`` than ``ApplicationController``
 
  <b>2. application.rb </b>
    ```ruby
