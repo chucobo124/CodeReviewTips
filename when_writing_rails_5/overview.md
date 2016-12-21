@@ -23,21 +23,24 @@ There is one thing I really interesting which is API mode of rails 5. In the pas
     self.abstract_class = true
   end
   ```
+  
   This line is helping to inherit to the ActiveRecord when you wanna have a function in the ``ActiveRecord``.
 
   [Link to documentation](http://blog.bigbinary.com/2015/12/28/application-record-in-rails-5.html)
 
 * ### Api Mode
+
 ```shell
 rails new my_api --api
 ```
+
 According the command line. Our application will become API mode. There are some thing different than origin rails app.
 
- <b>1. Controller</b>
-
-    Beforehand. The Controller will going to inherit ``ActionController::API`` than ``ApplicationController``
-
- <b>2. application.rb </b>
+ 1. <b>Controller</b>
+ 
+    Beforehand. The Controller will going to inherit ```ActionController::API``` than ```ApplicationController```
+    
+ 2. <b>application.rb </b>
 
    ```ruby
    config.api_only = true
