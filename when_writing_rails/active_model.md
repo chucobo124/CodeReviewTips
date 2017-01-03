@@ -37,3 +37,10 @@
     This is the documentation of ```has_one``` or ```has_many``` documentation.
 
     [has_one or has_many  comment in rails repo](https://github.com/rails/rails/blob/master/activerecord/lib/active_record/associations.rb#L1362)
+
+* ### Where is the log file
+    ``./log`` This is the log directory to save all the log file. But why need to check that? The reason is we use puma as rails server when we dev and it is not produce log when you do the rails s. Then we need to add.
+    ```ruby
+      config.logger = Logger.new(STDOUT)
+    ```
+    This line is going to log every action in rails. And If we only wanna see database log we can go to log ``test.log file``.
